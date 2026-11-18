@@ -7,7 +7,7 @@ export function template(name){return formats[String(name).toLowerCase()]??['Fin
 // glanceable, and every finding numbered so one piece can be sent to Main on its own (/agent send main #2).
 const VOCAB={
  critic:'Grade the request in the verdict (🟢 A / 🟡 B / 🟠 C / 🔴 D, then a 3–8 word reason; 🟢 A means Main can finish it without guessing). Items: ❓ missing information Main would have to guess, phrased as the exact question for the person (say what Main assumed); 💥 blast radius: something else the change touches that the person may not expect, such as existing records, other pages or other people, asked as the question of whether it should change too; ✂️ too big for one step: say so and name the first smaller step. Never list what is fine or settled, and never call Main’s choice clear or good. End with one item starting ➡️: the next step for the person.',
- notes:'Verdict: what changed in this exchange. Items: ✅ decided (say who decided), ❓ still open, ⏭️ next action. Never invent an owner or deadline.',
+ notes:'Verdict: your answer or what you kept, in a few words. Items: 💡 a kept thought, ✅ decided (say who decided), ❓ still open, ⏭️ next action. Never invent an owner or deadline.',
  research:'Verdict: the answer in a few words. Items: 🔎 a finding with its source (URL or file path) and trust ★★★ / ★★☆ / ★☆☆; ❔ what is still unknown.',
  historian:'Verdict: the answer. Items: 📜 evidence with its entry ID and speaker; ❔ what the history does not show.',
 };
